@@ -112,5 +112,41 @@ int main(){
     return 0;
 }
 
-// 8
+// 8 Crie um programa que conte de 1 a 100, mas só imprima os números divisíveis por 7.
 
+#include <stdio.h>
+
+int main(){
+    int n = 1;
+    
+    while(n <= 100){
+        if(n %7==0){
+            printf("%d ", n);
+        }
+        n++;
+    }
+    
+    
+    return 0;
+}
+
+// 9
+
+#include <stdio.h>
+
+int main(){
+    int x,y;
+    
+    printf("Digite 2 números: ");
+    scanf("%d %d", &x, &y);
+    
+    if(x > y){
+        printf("X é maior:%d ", x);
+    }else if(x < y){
+        printf("Y é maior:%d ", y);
+    }else{
+        printf("São iguais %d, %d", x,y);
+    }
+    
+    return 0;
+}
